@@ -10,7 +10,8 @@
     "newArchEnabled": true,
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.shekatie.PapApp"
+      "bundleIdentifier": "com.shekatie.PapApp",
+      "googleServicesFile": "./GoogleService-Info.plist"
     },
     "android": {
       "adaptiveIcon": {
@@ -24,6 +25,7 @@
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
+      "@react-native-firebase/app",
       "expo-router",
       [
         "expo-splash-screen",
@@ -33,7 +35,13 @@
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }
-      ]
+      ],
+      "expo-build-properties",
+      {
+        "ios": {
+          "useFrameworks": "static"
+        }
+      }
     ],
     "experiments": {
       "typedRoutes": true
