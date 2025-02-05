@@ -1,3 +1,5 @@
+import { AppTopBar } from "@/components/AppTopBar";
+import colors from "@/config/colors";
 import {
   DarkTheme,
   DefaultTheme,
@@ -33,8 +35,20 @@ export default function RootLayout() {
 
   return (
     <ThemeProvider value={colorScheme === "dark" ? DarkTheme : DefaultTheme}>
-      <Stack>
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+      <Stack
+        screenOptions={{
+          header: AppTopBar,
+          contentStyle: {
+            backgroundColor: colors.lightLilac,
+          },
+        }}
+      >
+        <Stack.Screen
+          name="(tabs)"
+          options={{
+            title: "",
+          }}
+        />
         <Stack.Screen
           name="index"
           options={{

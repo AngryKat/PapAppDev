@@ -1,3 +1,4 @@
+import { ArrowLeftSvg } from "./ArrowLeftSvg";
 import { BellFilledSvg } from "./BellFilledSvg";
 import { BellOutlinedSvg } from "./BellOutlinedSvg";
 import { BookSvg } from "./BookSvg";
@@ -19,6 +20,7 @@ import { TwoHorizontalLinesSvg } from "./TwoHorizontalLinesSvg";
 import { UserSvg } from "./UserSvg";
 
 // export with IconAdapter applied
+export const ArrowLeftIcon = IconAdapter(ArrowLeftSvg);
 export const BellFilledIcon = IconAdapter(BellFilledSvg);
 export const BellOutlinedIcon = IconAdapter(BellOutlinedSvg);
 export const BookIcon = IconAdapter(BookSvg);
