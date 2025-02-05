@@ -1,29 +1,46 @@
 import { Tabs } from "expo-router";
 import React from "react";
-import { Platform, useColorScheme } from "react-native";
-import { Colors } from "@/constants/Colors";
+import colors from "@/config/colors";
+import fonts from "@/config/fonts";
+import { BookIcon, GearIcon, HomeIcon } from "@/components/icons";
 
 export default function TabLayout() {
-  const colorScheme = useColorScheme();
-
   return (
     <Tabs
       screenOptions={{
-        tabBarActiveTintColor: Colors[colorScheme ?? "light"].tint,
+        tabBarInactiveTintColor: colors.blueLight2,
+        tabBarActiveTintColor: colors.primary,
         headerShown: false,
-        tabBarStyle: Platform.select({
-          ios: {
-            // Use a transparent background on iOS to show the blur effect
-            position: "absolute",
-          },
-          default: {},
-        }),
+        tabBarStyle: {
+          borderTopLeftRadius: 30,
+          borderTopRightRadius: 30,
+          paddingHorizontal: 20,
+        },
+        tabBarLabelStyle: {
+          fontFamily: fonts.PoppinsRegular,
+          fontSize: 10,
+        },
       }}
     >
       <Tabs.Screen
-        name="index"
+        name="(home)"
         options={{
           title: "Home",
+          tabBarIcon: ({ color }) => <HomeIcon size={20} color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="(pap-journal)"
+        options={{
+          title: "Pap Journal",
+          tabBarIcon: ({ color }) => <BookIcon size={24} color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="(settings)"
+        options={{
+          title: "Settings",
+          tabBarIcon: ({ color }) => <GearIcon size={24} color={color} />,
         }}
       />
     </Tabs>
