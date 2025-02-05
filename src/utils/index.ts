@@ -1,0 +1,1 @@
+export { applyOpacityToHex } from './applyOpacityToHex';

@@ -1,0 +1,23 @@
+export default {
+  primary: '#4233E1',
+  primaryPale: '#E5E8FF',
+  black: '#1F1736',
+  blue: '#006FFD',
+  blue2: '#2897FF',
+  blueLight: '#DAE9FF',
+  blueLight2: '#B4DBFF',
+  darkblue: '#001D90',
+  grey: '#6E6A7C',
+  greyLight: '#BFCCE9',
+  greyMiddle: '#8696BB',
+  greyDark: '#71727A',
+  lightLilac: '#EDE8FF',
+  light: '#F1F3FF',
+  lightViolet: '#9747FF',
+  mediumTurquoise: '#10EFBB',
+  lightPeriwinkle: '#CDD4EE',
+  red: '#ED3241',
+  softBlue: '#9AAAD9',
+  yellow: '#FFDE59',
+  white: '#FFFFFF'
+}
