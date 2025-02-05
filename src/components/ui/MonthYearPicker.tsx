@@ -22,7 +22,8 @@ const numberOfYearsOptions = 1001;
 const today = new Date();
 const yearsOptions = Array.from(
   { length: numberOfYearsOptions },
-  (_, index) => today.getFullYear() - numberOfYearsOptions / 2 + index
+  (_, index) =>
+    today.getFullYear() - Math.floor(numberOfYearsOptions / 2) + index
 );
 
 type Props = {

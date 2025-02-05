@@ -7,15 +7,14 @@ import { AppPressableButton } from "./ui";
 import { ArrowLeftIcon } from "./icons";
 
 type Props = {
-  href: Href;
   onPress?: () => void;
 };
 
-export function NavBackButton({ href, onPress }: Props) {
+export function NavBackButton({ onPress }: Props) {
   return (
     <AppPressableButton
       accessibilityLabel="back"
-      onPress={() => (!!onPress ? onPress() : router.navigate(href))}
+      onPress={() => (!!onPress ? onPress() : router.back())}
     >
       <CircledIcon
         size={32}
