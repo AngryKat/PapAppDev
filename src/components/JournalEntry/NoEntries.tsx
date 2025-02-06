@@ -6,10 +6,10 @@ import colors from "@/config/colors";
 export function NoEntries() {
   return (
     <View style={styles.container}>
-      <AppText style={styles.text}>There are no entries for this date</AppText>
       <AppText style={styles.text}>
-        Tap the button above to add a new entry
+        Your journal is empty for this month...
       </AppText>
+      <AppText style={styles.text}>Tap the button above to fix that!</AppText>
     </View>
   );
 }
@@ -21,5 +21,6 @@ const styles = StyleSheet.create({
   },
   text: {
     color: colors.greyMiddle,
+    textAlign: "center",
   },
 });
