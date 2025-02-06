@@ -17,6 +17,7 @@ import { PapAIFaceSvg } from "./PapAIFaceSvg";
 import { PenSvg } from "./PenSvg";
 import { PlusSvg } from "./PlusSvg";
 import { ThreeHorizontalStrokesSvg } from "./ThreeHorizontalStrokesSvg";
+import { TrashbinSvg } from "./TrashbinSvg";
 import { TwoHorizontalLinesSvg } from "./TwoHorizontalLinesSvg";
 import { UserSvg } from "./UserSvg";
 
@@ -39,6 +40,7 @@ export const PapAIFaceIcon = IconAdapter(PapAIFaceSvg);
 export const PenIcon = IconAdapter(PenSvg);
 export const PlusIcon = IconAdapter(PlusSvg);
 export const ThreeHorizontalStrokesIcon = IconAdapter(ThreeHorizontalStrokesSvg);
+export const TrashbinIcon = IconAdapter(TrashbinSvg);
 export const TwoHorizontalLinesIcon = IconAdapter(TwoHorizontalLinesSvg);
 export const UserIcon = IconAdapter(UserSvg);
 

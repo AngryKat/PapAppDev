@@ -11,6 +11,12 @@ export default function PapJournalLayout() {
           title: "Pap Journal",
         }}
       />
+      <Stack.Screen
+        name="journal-entry"
+        options={{
+          title: "",
+        }}
+      />
     </Stack>
   );
 }

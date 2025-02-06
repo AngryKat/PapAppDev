@@ -11,7 +11,7 @@ export { CancelButton } from './CancelButton';
 export { CircledIcon } from './CircledIcon';
 export { DropdownButton } from './DropdownButton';
 export { Heading } from './Heading';
-export { MonthSliderSelector } from './MonthSliderSelector';
+export { MonthCarouselSelector } from './MonthCarouselSelector';
 export { MonthYearPicker } from './MonthYearPicker';
 export { MoodsSlider } from './MoodsSlider';
 export { NavBar } from './NavBar';

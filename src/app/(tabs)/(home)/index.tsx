@@ -95,10 +95,12 @@ export default function HomeScreen() {
         showsVerticalScrollIndicator={false}
         style={{
           marginHorizontal: -24,
-          marginTop: 24,
         }}
       >
         <View style={styles.container}>
+          <AppText fontSize={14} fontWeight="500">
+            Check-in your emotion right now to keep track of your mood
+          </AppText>
           <MoodsChart moods={moods} />
           <WeekMoodCalendar
             moods={moods}
