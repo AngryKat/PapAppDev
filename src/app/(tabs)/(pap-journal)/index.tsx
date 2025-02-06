@@ -23,9 +23,7 @@ export default function PapJournalScreen() {
         <AppText fontSize={14} fontWeight="500">
           You can jot down your thoughts or reflect on your day
         </AppText>
-        <AppButton onPress={handleButtonPress}>
-          Add a new Journal Entry
-        </AppButton>
+        <AppButton onPress={handleButtonPress}>What's on your mind?</AppButton>
         <Heading level="2">Journal history</Heading>
         <JournalEntriesDateSelector
           onChange={setSelectedDate}
